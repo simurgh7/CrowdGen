@@ -7,25 +7,23 @@ This repository implements generative adversarial perturbations for crowd counti
 
 ## 📁 General Project Structure
 
-├── Crowd Model/ # Density Map or Point Regression approach
-│ ├── datasets/
-│ │ └── dataset.py # Dataloader
-| | └── make_npydata.py # Data Organizer
-│ └── models/
-| | └── model.py # Files for Crowd Localized Counting Model
-| | └── unet.py # Perturbation Generator Network
-│ └── util/ # Optional for specific methods. 
-│ ├── attack_unet.py # Train perturbation generator
-| ├── camgen.py # GradCAM extraction process for backbone
-│ ├── config.py # Configuration with flag support
-| ├── engine.py # evaluation functions
-| ├── explain.py # cam ex
-│ └── inference.py # Side-by-side comparison (clean vs. adversarial)
-
-......
-└── data/ # Data directory (create this for SHHA, UCF, JHU, NWPU)
-  ├── image_data/ # Images (e.g., 1.jpg)
-  └── gt_data/ # Ground truth (e.g., 1.h5)
+├── Crowd Model/                     # Density Map or Point Regression approach
+│   ├── datasets/
+│   │   ├── dataset.py               # Dataloader
+│   │   └── make_npydata.py          # Data Organizer
+│   ├── models/
+│   │   ├── model.py                 # One or more files for Crowd Localized Counting Model
+│   │   └── unet.py                  # Perturbation Generator Network
+│   ├── util/                        # Optional for specific methods
+│   ├── attack_unet.py               # Train perturbation generator
+│   ├── camgen.py                    # GradCAM extraction process for backbone
+│   ├── config.py                    # Configuration with flag support
+│   ├── engine.py                    # Evaluation functions
+│   ├── explain.py                   # CAM explanations
+│   └── inference.py                 # Side-by-side comparison (clean vs. adversarial)
+└── data/                            # Data directory (create this for SHHA, UCF, JHU, NWPU)
+    ├── image_data/                  # Images (e.g., 1.jpg)
+    └── gt_data/                     # Ground truth (e.g., 1.h5)
 
 ## 🚀 Quick Start
 
