@@ -1,7 +1,7 @@
 # CrowdGen
 ### Official Implementation of "Generative Adversarial Perturbations with Cross-paradigm Transferability on Localized Crowd Counting"
 
-**CVPR 2026**
+**Venue: CVPR 2026 Main Conference**
 
 This repository implements generative adversarial perturbations for crowd counting networks. Representative methods for both density map (SASNet) and point regression (P2PNet) paradigms are provided.
 
@@ -44,5 +44,5 @@ python attack_unet.py  --epochs 50 --batch_size 8
 ```
 ### Evaluation Side by Side
 ```
-python models/inference.py --model_path ./weights/model.pth --adv_npy_path ./datasets/npydata/shha_adv.npy --clean_npy_path ./datasets/npydata/shha_clean.npy
+python <Crowd Model>/inference.py --model_path ./weights/model.pth --adv_npy_path ./datasets/npydata/shha_adv.npy --clean_npy_path ./datasets/npydata/shha_clean.npy
 ```
