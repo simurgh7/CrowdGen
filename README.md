@@ -1,5 +1,5 @@
 # CrowdGen
-### Official Implementation of ["Generative Adversarial Perturbations with Cross-paradigm Transferability on Localized Crowd Counting"](https://openaccess.thecvf.com/content/CVPR2026/papers/Anisha_Generative_Adversarial_Perturbations_with_Cross-paradigm_Transferability_on_Localized_Crowd_Counting_CVPR_2026_paper.pdf)
+### Official Implementation of [Generative Adversarial Perturbations with Cross-paradigm Transferability on Localized Crowd Counting](https://openaccess.thecvf.com/content/CVPR2026/papers/Anisha_Generative_Adversarial_Perturbations_with_Cross-paradigm_Transferability_on_Localized_Crowd_Counting_CVPR_2026_paper.pdf)
 
 **Venue: CVPR 2026 Main Conference**
 
